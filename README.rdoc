@@ -5,7 +5,7 @@ This is an extension to improve upon the QBN.com experience. At the moment (vers
 Chrome packaged version:
 http://li69-244.members.linode.com/QBN-Enhancer-for-Chrome.crx
 
-Safari 5 extension:
+Safari 5 extension (right click link and select "Save Linked File As"):
 http://li69-244.members.linode.com/QBN%20Enhancer.safariextz
 
 ==Version 1.0
