@@ -2,8 +2,11 @@
 
 This is an extension to improve upon the QBN.com experience. At the moment (version 1.0) it only adds a button to report spammers.
 
-If you want an already packaged version of the extension, follow this link:
+Chrome packaged version:
 http://li69-244.members.linode.com/QBN-Enhancer-for-Chrome.crx
+
+Safari 5 extension:
+http://li69-244.members.linode.com/QBN%20Enhancer.safariextz
 
 ==Version 1.0
 - Added a button on the top of the 1st page of each thread named "Report Spam" to make it easy to report spammers.
