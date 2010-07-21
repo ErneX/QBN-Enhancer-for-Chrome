@@ -1,0 +1,6 @@
+=QBN Enhancer for Google Chrome
+
+This is an extension to improve upon the QBN.com experience. At the moment (version 1.0) it only adds a button to report spammers.
+
+==Version 1.0
+- Added a button on the top of the 1st page of each thread named "Report Spam" to make it easy to report spammers.

@@ -1,0 +1,28 @@
+{
+  "name": "QBN Enhancer for Chrome",
+  "version": "1.0",
+  "description": "For a better QBN experience.",
+	"background_page" : "background.html",
+  "page_action": {
+    "default_icon": "images/icon_18.png"
+  },
+  "icons": {
+      "128": "images/icon_128.png"
+  },
+	"content_scripts": [
+	    {
+	      "matches": ["http://www.qbn.com/*"],
+	      "js": [
+					"js/jquery-1.4.2.min.js",
+					"js/jquery.getUrlParam.js",
+					"js/jquery-ui-1.8.2.custom.min.js",
+					"js/qbn.js"
+				],
+				"all_frames": false,
+				"run_at": "document_end"
+	    }
+	  ],
+  "permissions": [
+    "http://www.qbn.com/*"
+  ]
+}
