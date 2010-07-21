@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "For a better QBN experience.",
 	"background_page" : "background.html",
-  "page_action": {
+	"page_action": {
     "default_icon": "images/icon_18.png"
   },
   "icons": {
