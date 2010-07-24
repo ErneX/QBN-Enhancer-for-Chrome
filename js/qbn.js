@@ -20,12 +20,18 @@ if ($("#pv_summary").length > 0) {
 	$("li.reply").hover(
 	  function () {
 			current_post = $(this).attr("id");
+			$("#add_note_bottom_" + current_post.substr(6)).find("img").click(function(){
+				posting = true;
+			});
+			$("a.add_note_link").find("img").click(function(){
+				posting = true;
+			});
 	  }, 
 	  function () {
 			current_post = '';
 	  }
 	);
-	
+
 	$('body').keypress(function(e) {
 	  if (current_post != '' && e.keyCode == 114 && !posting) {
 			$("a.note_cancel_link").click();
