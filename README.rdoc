@@ -5,8 +5,8 @@ This is an extension to improve upon the QBN.com experience.
 Chrome packaged version:
 http://li69-244.members.linode.com/QBN-Enhancer-for-Chrome.crx
 
-Safari 5 extension (right click link and select "Save Linked File As"):
-http://li69-244.members.linode.com/QBN%20Enhancer.safariextz
+Safari 5 extension (zipped):
+http://li69-244.members.linode.com/QBN%20Enhancer.safariextz.zip
 
 ==Version 1.1
 - Keyboard shortcut to reply a comment with a note (mouse-over a comment and hit the 'r' key).
