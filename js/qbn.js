@@ -1,6 +1,7 @@
 var spam_button = '<a class="pbutton block" id="report_spam" href="#""><span>Report Spam</span></a>';
 var current_post = '';
 var current_opened_post = '';
+var posting = false;
 
 if ($("#pv_summary").length > 0) {
 	var pathname = window.location.pathname;
@@ -26,7 +27,7 @@ if ($("#pv_summary").length > 0) {
 	);
 	
 	$('body').keypress(function(e) {
-	  if (current_post != '' && e.keyCode == 114) {
+	  if (current_post != '' && e.keyCode == 114 && !posting) {
 			$("a.note_cancel_link").click();
 			$("a#add_note_bottom_" + current_post.substr(6)).click();
 			if (current_post.substr(6) != current_opened_post && e.keyCode == 114) {
@@ -35,6 +36,13 @@ if ($("#pv_summary").length > 0) {
 				return false;
 			}
 		}
+	});
+	
+	$("#id_text").focusin(function (){
+		posting = true;
+	});
+	$("#id_text").focusout(function (){
+		posting = false;
 	});
 	
 }
