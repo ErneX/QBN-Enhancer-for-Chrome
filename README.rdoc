@@ -3,7 +3,7 @@
 This is an extension to improve upon the QBN.com experience.
 
 Chrome packaged version (version 1.2):
-http://li69-244.members.linode.com/QBN-Enhancer-for-Chrome.crx
+http://er.nes.to/QBN-Enhancer-for-Chrome.crx
 
 Safari 5 extension (zipped, version 1.1):
 http://li69-244.members.linode.com/QBN%20Enhancer.safariextz.zip
