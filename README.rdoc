@@ -2,11 +2,15 @@
 
 This is an extension to improve upon the QBN.com experience.
 
-Chrome packaged version (version 1.2):
-http://er.nes.to/QBN-Enhancer-for-Chrome.crx
+Chrome packaged version (version 1.2.1):
+http://er.nes.to/chrome-enhancer/QBN-Enhancer-for-Chrome.crx
 
 Safari 5 extension (zipped, version 1.1):
 http://li69-244.members.linode.com/QBN%20Enhancer.safariextz.zip
+
+==Version 1.2.1
+- Preliminary support for ignoring users, limited to main posts at the moment (bubbles on the right coming up in the next release!). This version is Chrome only too.
+- The extension now checks for updates and auto-updates itself (Chrome).
 
 ==Version 1.2
 - Added an options page with the ability to disable the embedding of Youtube videos and images. Only for Chrome for this release, Safari will come shortly after.

@@ -4,6 +4,7 @@ var current_opened_post = '';
 var posting = false;
 
 if ($("#comment_list").length > 0) {
+
 	chrome.extension.sendRequest({name: "getPreferences"},
 	     function(response)
 	     {
@@ -23,6 +24,30 @@ if ($("#comment_list").length > 0) {
 							url = $(this).children(0).attr("value");
 							$(this).parent().replaceWith('<a title="' + url + '" href="' + url + '" target="_blank">' + url + '</a><br />');
 						});						
+					}
+					if (JSON.parse(response.qbnIgnoreList).length > 0) {
+						//ignore users
+						elems = $("#comment_list ul li dl dt a").filter(function(index) {
+							ignorelist = JSON.parse(response.qbnIgnoreList);
+							for (i=0;i<ignorelist.length;i++) {
+								var filter = new RegExp("^" + ignorelist[i] + "$");
+								if (filter.test($(this).text())) {
+									return $(this);
+								}
+							}
+						});
+						elems.each(function(index) {
+							$(this).parent().parent().find("dd.comment_notes").css("display","none");
+							$(this).parent().parent().css("display","none");
+							$(this).parent().parent().before('<div class="ignored"><span class="ignore_info">ignored comment by <strong>' + $(this).html() + '</strong></span></div>');
+						});
+						$("div.ignored").each(function(index){
+							$(this).bind('click',function() {
+								$(this).next("dl").css("display","block");
+								$(this).next("dl").find(".comment_notes").css("display","block");
+								$(this).remove();
+							});
+						});
 					}
 			}
 	);

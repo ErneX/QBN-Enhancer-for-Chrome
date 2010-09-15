@@ -1,6 +1,7 @@
 {
   "name": "QBN Enhancer for Chrome",
-  "version": "1.2",
+  "version": "1.2.1",
+	"update_url": "http://er.nes.to/chrome-enhancer/updates.xml",
   "description": "For a better QBN experience.",
 	"background_page" : "background.html",
 	"page_action": {
@@ -18,6 +19,9 @@
 					"js/jquery.getUrlParam.js",
 					"js/jquery-ui-1.8.2.custom.min.js",
 					"js/qbn.js"
+				],
+				"css": [
+					"css/styles.css"
 				],
 				"all_frames": false,
 				"run_at": "document_end"
