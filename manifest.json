@@ -1,11 +1,12 @@
 {
   "name": "QBN Enhancer for Chrome",
-  "version": "1.1",
+  "version": "1.2",
   "description": "For a better QBN experience.",
 	"background_page" : "background.html",
 	"page_action": {
     "default_icon": "images/icon_18.png"
   },
+	"options_page": "options.html",
   "icons": {
       "128": "images/icon_128.png"
   },
@@ -23,6 +24,6 @@
 	    }
 	  ],
   "permissions": [
-    "http://www.qbn.com/*"
+    "contextMenus","http://www.qbn.com/*"
   ]
 }

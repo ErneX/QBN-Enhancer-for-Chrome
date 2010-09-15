@@ -3,6 +3,31 @@ var current_post = '';
 var current_opened_post = '';
 var posting = false;
 
+if ($("#comment_list").length > 0) {
+	chrome.extension.sendRequest({name: "getPreferences"},
+	     function(response)
+	     {
+	        if (response.qbnShowImages == "false") {
+						$("#comment_list li dl img").css("display","none"); //hide all images
+						//turn images into links
+						$("#comment_list li dl div.imgsizer").each(function(index) {
+							url = $(this).find("img").attr("src");
+							url_text = (url.length > 70) ? url.substring(0,70) + "…" : url;
+							$(this).replaceWith('<a title="' + url + '" href="' + url + '" target="_blank">' + url_text + '</a><br />');
+						});		
+					}
+					if (response.qbnShowVideos == "false") {
+						$("#comment_list li dl object").css("display","none"); //hide all videos
+						//turn videos into links
+						$("#comment_list li dl p object").each(function(index) {
+							url = $(this).children(0).attr("value");
+							$(this).parent().replaceWith('<a title="' + url + '" href="' + url + '" target="_blank">' + url + '</a><br />');
+						});						
+					}
+			}
+	);
+}
+
 if ($("#pv_summary").length > 0) {
 	var pathname = window.location.pathname;
 	if (!$(document).getUrlParam("page") && $("p#login_area").html().indexOf("Welcome,") >= 0) {

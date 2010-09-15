@@ -2,11 +2,14 @@
 
 This is an extension to improve upon the QBN.com experience.
 
-Chrome packaged version:
+Chrome packaged version (version 1.2):
 http://li69-244.members.linode.com/QBN-Enhancer-for-Chrome.crx
 
-Safari 5 extension (zipped):
+Safari 5 extension (zipped, version 1.1):
 http://li69-244.members.linode.com/QBN%20Enhancer.safariextz.zip
+
+==Version 1.2
+- Added an options page with the ability to disable the embedding of Youtube videos and images. Only for Chrome for this release, Safari will come shortly after.
 
 ==Version 1.1
 - Keyboard shortcut to reply a comment with a note (mouse-over a comment and hit the 'r' key).
