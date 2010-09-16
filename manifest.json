@@ -1,6 +1,6 @@
 {
   "name": "QBN Enhancer for Chrome",
-  "version": "1.2.1",
+  "version": "1.2.2",
 	"update_url": "http://er.nes.to/chrome-enhancer/updates.xml",
   "description": "For a better QBN experience.",
 	"background_page" : "background.html",

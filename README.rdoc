@@ -2,11 +2,14 @@
 
 This is an extension to improve upon the QBN.com experience.
 
-Chrome packaged version (version 1.2.1):
+Chrome packaged version (version 1.2.2):
 http://er.nes.to/chrome-enhancer/QBN-Enhancer-for-Chrome.crx
 
 Safari 5 extension (zipped, version 1.1):
 http://li69-244.members.linode.com/QBN%20Enhancer.safariextz.zip
+
+==Version 1.2.2
+- Bugfix: disabling image embedding no longer breaks comment bubbles (thanks Lillebo!).
 
 ==Version 1.2.1
 - Preliminary support for ignoring users, limited to main posts at the moment (bubbles on the right coming up in the next release!). This version is Chrome only too.

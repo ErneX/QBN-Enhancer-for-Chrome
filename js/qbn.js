@@ -9,7 +9,7 @@ if ($("#comment_list").length > 0) {
 	     function(response)
 	     {
 	        if (response.qbnShowImages == "false") {
-						$("#comment_list li dl img").css("display","none"); //hide all images
+						$("#comment_list li dl.comment_body img").css("display","none"); //hide all images
 						//turn images into links
 						$("#comment_list li dl div.imgsizer").each(function(index) {
 							url = $(this).find("img").attr("src");
