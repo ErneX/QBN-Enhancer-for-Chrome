@@ -6,7 +6,7 @@ Chrome packaged version (version 1.2.2):
 http://er.nes.to/chrome-enhancer/QBN-Enhancer-for-Chrome.crx
 
 Safari 5 extension (zipped, version 1.1):
-http://li69-244.members.linode.com/QBN%20Enhancer.safariextz.zip
+http://er.nes.to/QBN%20Enhancer.safariextz.zip
 
 ==Version 1.2.2
 - Bugfix: disabling image embedding no longer breaks comment bubbles (thanks Lillebo!).
